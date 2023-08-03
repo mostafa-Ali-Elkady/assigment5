@@ -82,3 +82,36 @@ footer p {
   margin: 1rem auto 0;
   color: #9f9e9e;
 }
+/* Style cards */
+.weather-card {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 5px 0 rgba(177, 177, 181, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.weather-card .date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.weather-card .temp {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.weather-card .desc {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #2196f3;
+  font-weight: 800;
+}
+.weather-card .wind,
+.weather-card .humidity,
+.weather-card .campus {
+  font-weight: 600;
+}
