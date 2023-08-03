@@ -4,7 +4,12 @@ function getWeatherData(city = "cairo") {
   const weatherContainerElement = document.getElementById("weather-container");
   const cityName = document.getElementById("cityName");
 
-  fetch(apiUrl)
+  fetch(apiUrl, {
+  mode: 'cors',
+  headers: {
+    'Access-Control-Allow-Origin':'*'
+  }
+  })
     .then((response) => {
       if (response.ok) {
         return response.json();
