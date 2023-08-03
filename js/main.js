@@ -15,6 +15,7 @@ function getWeatherData(city = "cairo") {
         // clear any previous weather cards from the weather container
         weatherContainerElement.innerHTML = "";
         cityName.innerText = `${data.location.country} => ${data.location.name}`;
+
         // create and style the weather card elements for the selected city
         for (let i = 0; i < 3; i++) {
           const date = data.forecast.forecastday[i].date;
@@ -53,6 +54,7 @@ function getWeatherData(city = "cairo") {
 getWeatherData();
 
 // Attach event listener to the input field for the "keyup" event
+
 document.getElementById("city-input").addEventListener("keyup", function (e) {
   getWeatherData(e.target.value);
 });

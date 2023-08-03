@@ -39,7 +39,7 @@
           >
             <li class="nav-item">
               <a
-                class="nav-link text-white active px-3"
+                class="nav-link text-white px-3"
                 aria-current="page"
                 href="./index.html"
                 >Home</a
@@ -55,7 +55,7 @@
               <a class="nav-link text-white px-3" href="#">Photos</a>
             </li>
             <li class="nav-item ps-3">
-              <a class="nav-link text-white px-3" href="./contact.html"
+              <a class="nav-link text-white px-3 active" href="./contact.html"
                 >Contact</a
               >
             </li>
@@ -67,17 +67,66 @@
     <!-- Start Main -->
     <main>
       <div class="container">
-        <div class="position-relative search-div">
-          <input
-            type="text"
-            placeholder="Enter Your Location"
-            class="form-control search"
-            id="city-input"
-          />
-          <i class="icon-search"></i>
+        <div class="row mt-5">
+          <div class="col-md-5 mt-5 contact">
+            <h2>Contact Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, quisquam doloribus minus similique libero autem ipsam
+              perferendis nobis quos consequatur totam
+            </p>
+            <div class="contact-info">
+              <i class="icon-envelop me-2"></i><span>Chat to us</span>
+              <p>Our friendly Team Here To help You</p>
+              <p>Ourcompany@gamil.com</p>
+            </div>
+            <div class="contact-info">
+              <i class="icon-location me-2"></i><span>Office</span>
+              <p>Come to Our Location To see</p>
+              <p>100 st Street ,Cairo</p>
+            </div>
+            <div class="contact-info">
+              <i class="icon-phone me-2"></i><span>Call Us</span>
+              <p>Every Day from 10 am To 6 pm</p>
+              <p>+20151235897</p>
+            </div>
+          </div>
+          <div class="col-md-7 mt-5">
+            <form action="" class="position-relative">
+              <input
+                type="text"
+                class="form-control mb-3 contact"
+                placeholder="Your name"
+              />
+              <input
+                type="email"
+                class="form-control mb-3 contact"
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                class="form-control mb-3 contact"
+                placeholder="Your Company"
+              />
+              <input
+                type="text"
+                class="form-control mb-3 contact"
+                placeholder="Your Website"
+              />
+              <textarea
+                name="mesage"
+                class="form-control mb-3 contact"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn-outline-primary ms-auto">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
-        <h2 id="cityName" class="mb-5"></h2>
-        <div class="row g-5" id="weather-container"></div>
       </div>
     </main>
     <!-- End Main -->
@@ -86,7 +135,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <form action="" class="position-relative overflow-hidden">
+            <form action="" class="position-relative">
               <input
                 type="text"
                 placeholder="Enter Your Email To subscribe ..."
@@ -121,6 +170,6 @@
     </footer>
     <!-- End Footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
